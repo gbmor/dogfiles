@@ -1,0 +1,17 @@
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.fastmail.com
+	smtpuser = ben@gbmor.dev
+	smtpserverport = 465
+	annotate = yes
+[user]
+    name = "Ben Morrison"
+    email = ben@gbmor.dev
+    signingkey = EAB272409CD12FF0
+
+[commit]
+	gpgsign = true
+[hub]
+	protocol = ssh
+[sequence]
+	editor = interactive-rebase-tool

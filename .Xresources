@@ -1,0 +1,20 @@
+URxvt*loginShell: true
+URxvt*foreground: gray
+URxvt*background: black
+URxvt*font: xft:Terminus:pixelsize=11:encoding=combined
+URxvt*scrollBar: false
+URxvt*metaSendsEscape: true
+URxvt*bellIsUrgent: true
+
+XTerm*loginShell: true
+XTerm*foreground: gray
+XTerm*background: black
+XTerm*faceName: xft:Hasklig:pixelsize=12
+XTerm*faceSize: 14
+XTerm*scrollBar: false
+XTerm*metaSendsEscape: true
+XTerm*bellIsUrgent: true
+XTerm*VT100.Translations: #override\n\
+    Ctrl Shift <KeyPress> v: insert-selection(CLIPBOARD)\n\
+    Ctrl Shift <KeyPress> c: copy-selection(CLIPBOARD)\n
+
