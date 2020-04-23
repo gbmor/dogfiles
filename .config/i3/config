@@ -64,6 +64,7 @@ bindsym XF86AudioMicMute exec "amixer -D pulse sset Mic toggle"
 #bindsym XF86Sleep exec dmenu_run
 bindsym XF86MonBrightnessDown exec "backlight -5"
 bindsym XF86MonBrightnessUp exec "backlight 5"
+bindsym Print exec "scrot ~/screens/$(date +%Y-%m-%d-%H:%M:%S).png"
 
 #bindsym $mod+c exec "xterm -e cataclysm"
 #bindsym $mod+t exec "xterm -e tf"
