@@ -24,20 +24,12 @@ alias dotfiles='/usr/bin/git --git-dir=/home/ahriman/.dotfiles/ --work-tree=/hom
 alias pkgs='/usr/bin/apt search --names-only'
 alias netstat='netstat -lntp'
 alias cat='bat'
-alias mtr='mtr -t'
-alias todo='ultralist'
-alias t='todo'
-alias gk='sh $HOME/bin/gk'
 
 # misc dev aliases
-alias devdash='devdash --config .devdash-github.yml'
-alias ldc='ldmd2'
-alias clang='clang-9'
-alias clang++='clang++-9'
 alias rebase='interactive-rebase-tool'
 alias rust-musl-builder='docker run --rm -it -v "$(pwd)":/home/rust/src ekidd/rust-musl-builder'
 alias cargogen='cargo generate --git https://github.com/gbmor/cargo-template --name'
-alias python='python3.8'
+alias python='python3'
 
 # some aliases for cd use
 alias devgo='cd ~/dev/go/src/github.com'
