@@ -11,10 +11,7 @@
 #################################
 # AUTOSTART SECTION
 # ###############################
-exec xcompmgr &
-exec "sh ~/.fehbg &"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec "redshift -l 34:84 -t 5500:4000 &"
 exec "pactl upload-sample /usr/share/sounds/freedesktop/stereo/bell.oga x11-bell"
 exec "pactl load-module module-x11-bell sample=x11-bell display=$DISPLAY"
 exec "xset b 100"
@@ -62,8 +59,8 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioMicMute exec "amixer -D pulse sset Mic toggle"
 #bindsym XF86Sleep exec dmenu_run
-bindsym XF86MonBrightnessDown exec "backlight -5"
-bindsym XF86MonBrightnessUp exec "backlight 5"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym Print exec "scrot ~/screens/$(date +%Y-%m-%d-%H:%M:%S).png"
 
 #bindsym $mod+c exec "xterm -e cataclysm"
