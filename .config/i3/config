@@ -233,7 +233,7 @@ for_window [class="(?i)studio-(.*)"] exec "transset -a 1.0"
 # alacritty has native transparency
 #for_window [class="Alacritty"] exec "transset -a 0.9"
 
-client.focused #00b0ef #00b0ef #141414 #ff7066
+client.focused #00b0ef #00b0ef #141414 #ff7066 #292d2e
 client.focused_inactive #141414 #141414 #00b0ef #472b2a
 client.unfocused #141414 #141414 #7d7d7d #141414
 client.urgent #ff7066 #ff7066 #141414 #ff7066
