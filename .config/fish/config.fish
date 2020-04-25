@@ -1,3 +1,16 @@
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+set -x LANGUAGE en_US.UTF-8
+
+# use gpg-agent for ssh
+set -x GPG_TTY (tty)
+set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+gpgconf --create-socketdir
+gpgconf --launch gpg-agent
+gpg-connect-agent updatestartuptty /bye > /dev/null
+
+ulimit -n 8096
+
 function vim
   command nvim $argv
 end
