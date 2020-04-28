@@ -27,8 +27,8 @@ modules-left = i3
 modules-center =
 modules-right = cpu memory rootfs cputemp batt1 batt0 wlan eth date
 
-tray-position =
-;tray-padding =
+tray-position = right
+tray-padding = 1
 ;wm-restack = i3
 ;override-redirect = true
 
