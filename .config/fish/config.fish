@@ -84,6 +84,7 @@ set -x PAGER "/home/ahriman/.cargo/bin/bat -p"
 set -x BROWSER firefox
 set -x TERM xterm-256color
 set -x MANPATH /usr/local/man $MANPATH
+set -x MANPATH /usr/share/man $MANPATH
 set -x PKG_CONFIG_PATH /usr/lib/x86_64-linux-gnu/pkgconfig /usr/local/lib/x86_64-linux-gnu/pkgconfig /usr/share/pkgconfig
 
 set -x GDK_BACKEND x11

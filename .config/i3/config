@@ -220,7 +220,6 @@ bindsym $mod+r mode "resize"
 
 new_window pixel 1
 new_float pixel 1
-for_window [class="(?i)alacritty(.*)"] exec "transset -a 0.9"
 for_window [class="kitty"] exec "transset -a 0.9"
 for_window [class="XTerm"] exec "transset -a 0.9"
 for_window [class="xterm"] exec "transset -a 0.9"
