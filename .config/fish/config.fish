@@ -42,19 +42,13 @@ function rebase
 end
 #  command rust-musl-builder docker run --rm -it -v $(pwd) /home/rust/src ekidd/rust-musl-builder
 function cargogen
-  command cargo generate --git https //github.com/gbmor/cargo-template --name $argv
+  command cargo generate --git 'https://github.com/gbmor/cargo-template' --name $argv
 end
 function python
   command python3 $argv
 end
 
 # some   commandes for cd use
-function devgo
-  cd ~/dev/go/src/github.com
-end
-function devgog
-  cd ~/dev/go/src/github.com/gbmor
-end
 function devg
   cd ~/dev/github/
 end
@@ -63,6 +57,9 @@ function devgg
 end
 function devggf
   cd ~/dev/github/gbmor-forks
+end
+function devgi
+  cd ~/dev/github/tildeinstitute
 end
 function devgl
   cd ~/dev/gitlab
