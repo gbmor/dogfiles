@@ -18,7 +18,12 @@
   "gitlens.advanced.telemetry.enabled": false,
   "go.formatTool": "goimports",
   "go.gopath": "/home/ahriman/dev/go",
-  "go.testFlags": ["-v", "--bench", ".", "--benchmem"],
+  "go.testFlags": [
+    "-v",
+    "--bench",
+    ".",
+    "--benchmem"
+  ],
   "go.useLanguageServer": true,
   "java.configuration.checkProjectSettingsExclusions": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
