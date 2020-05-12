@@ -1,11 +1,12 @@
 {
   "breadcrumbs.enabled": true,
-  "clang-format.executable": "/usr/bin/clang-format-9",
+  "clang-format.executable": "/usr/bin/clang-format",
   "d.servedPath": "/home/ahriman/.local/share/code-d/bin/serve-d",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.fontSize": 12,
   "editor.minimap.enabled": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
