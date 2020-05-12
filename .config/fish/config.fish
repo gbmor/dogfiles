@@ -11,9 +11,6 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 
 ulimit -n 8096
 
-function vim
-  command nvim $argv
-end
 function less
   command ~/.cargo/bin/bat -p $argv
 end
@@ -75,7 +72,7 @@ function devtilde
 end
 
 # misc environment modifications
-set -x VISUAL nvim
+set -x VISUAL vim
 set -x EDITOR $VISUAL
 set -x PAGER "/home/ahriman/.cargo/bin/bat -p"
 set -x BROWSER firefox
@@ -103,7 +100,7 @@ set -x HUB_CONFIG $HOME/.config/hub
 set -x HUB_PROTOCOL ssh
 
 # rust env
-set -x RUST_SRC_PATH ~/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust
+set -x RUST_SRC_PATH ~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
 
 # go env
 set -x GOPATH $HOME/dev/go
