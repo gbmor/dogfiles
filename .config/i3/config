@@ -15,7 +15,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec "pactl upload-sample /usr/share/sounds/freedesktop/stereo/bell.oga x11-bell"
 exec "pactl load-module module-x11-bell sample=x11-bell display=$DISPLAY"
 exec "xset b 100"
-exec "emacs --daemon"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
