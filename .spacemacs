@@ -33,15 +33,18 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     c-c++
      asciidoc
+     c-c++
+     d
      go
      html
      markdown
      python
+     racket
      rust
      shell-scripts
      yaml
+     zig
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -489,16 +492,18 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (go :variables go-tab-width 4)
-  (go :variables go-format-before-save t)
-  (go :variables gofmt-command "goimports")
-  (go :variables go-use-golantci-lint t)
-  (go :variables go-use-test-args "-race -timeout 10s")
-  (go :variables go-backend 'lsp)
+  (setq go-tab-width 4)
+  (setq go-format-before-save t)
+  (setq gofmt-command "goimports")
+  (setq go-use-golantci-lint t)
+  (setq go-use-test-args "-race -timeout 10s")
+  (setq go-backend 'lsp)
 
-  (lsp :variables lsp-rust-server 'rust-analyzer)
+  (setq lsp-rust-server 'rust-analyzer)
 
-  (rust :variables rust-format-on-save t)
+  (setq rust-format-on-save t)
+
+  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
 
   )
 
