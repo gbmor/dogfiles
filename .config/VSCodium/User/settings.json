@@ -51,7 +51,7 @@
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "Dracula",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.enableNaturalLanguageSearch": false,
