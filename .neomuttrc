@@ -1,0 +1,54 @@
+source ~/.config/neomutt/dracula-theme/dracula.muttrc
+source ~/.config/neomutt/gpg.rc
+set crypt_use_gpgme	= yes
+set pgp_default_key	= "0x9cd12ff0"
+
+set from	= "Benjamin Morrison <ben@gbmor.dev>"
+set editor	= nvim
+set timeout	= 30
+set mail_check	= 5
+set signature	= "$HOME/.mutt/sig"
+
+set smtp_authenticators       = "login"
+set ssl_force_tls             = yes
+set smtp_url                  = "smtp://ben@gbmor.dev@smtp.fastmail.com:587"
+set smtp_pass	= "`pass Email/fastmail-mutt`"
+
+set imap_user	= "ben@gbmor.dev"
+set imap_pass	= "`pass Email/fastmail-mutt`"
+set folder	= imaps://imap.fastmail.com:993/
+set spoolfile	= +INBOX
+set record	= +Sent
+set postponed	= +Drafts
+set trash	= +Trash
+set imap_check_subscribed
+#unset imap_passive
+set imap_keepalive	= 300
+
+set sidebar_visible	= yes
+set sidebar_format	= "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
+
+# Ctrl-Shift-P – Previous Mailbox
+bind index,pager \CP sidebar-prev
+# Ctrl-Shift-N – Next Mailbox
+bind index,pager \CN sidebar-next
+# Ctrl-Shift-O – Open Highlighted Mailbox
+bind index,pager \CO sidebar-open
+
+# Plenty of space
+set sidebar_width	 = 25
+# Pretty line-drawing character
+set sidebar_divider_char = '│'
+
+# Shorten mailbox names
+set sidebar_short_path
+# Delete everything up to the last / character
+set sidebar_delim_chars	= "/"
+# Indent folders whose names we've shortened
+set sidebar_folder_indent
+set sidebar_indent_string = "  "
+
+set sort	= threads
+set sort_aux	= reverse-last-date-received
+set sort_re
