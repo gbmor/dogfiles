@@ -67,5 +67,6 @@
   "C_Cpp.clang_format_style": "Mozilla",
   "todo-tree.tree.showScanModeButton": false,
   "rust-client.engine": "rust-analyzer",
-  "rust-analyzer.updates.channel": "nightly"
+  "rust-analyzer.updates.channel": "nightly",
+  "python.formatting.provider": "black"
 }
