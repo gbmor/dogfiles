@@ -1,4 +1,6 @@
-*background:                      #272827
+*faceName: 'Fira Code'
+*faceSize: 8.5
+*background:                      #000000
 *foreground:                      #657b83
 *cursorColor:                     #16A085
 
@@ -19,7 +21,7 @@
 *color7:                          #E0E0E0
 *color15:                         #E8E8E8
 
-URxvt.font: xft:Source Code Pro:size=10.5
+URxvt.font: xft:Fira Code:size=8.5
 URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
