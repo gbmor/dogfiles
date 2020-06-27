@@ -51,7 +51,7 @@
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dark-Dracula",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.enableNaturalLanguageSearch": false,
