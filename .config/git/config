@@ -1,21 +1,22 @@
 [sendemail]
-	smtpEncryption = tls
-	smtpServer = smtp.fastmail.com
-	smtpUser = ben@gbmor.dev
-	smtpServerPort = 587
-	annotate = yes
+    smtpEncryption = tls
+    smtpServer = smtp.fastmail.com
+    smtpUser = ben@gbmor.dev
+    smtpServerPort = 587
+    annotate = yes
 [user]
-    name = "Ben Morrison"
+    name = "Benjamin Morrison"
     email = ben@gbmor.dev
     signingkey = EAB272409CD12FF0
-
+[init]
+    templatedir = /home/ahriman/.config/git/template.git
 [commit]
-	gpgsign = true
+    gpgsign = true
 [hub]
-	protocol = ssh
+    protocol = ssh
 [sequence]
-	editor = interactive-rebase-tool
+    editor = interactive-rebase-tool
 [credential]
-	helper = cache --timeout 3600
+    helper = cache --timeout 3600
 [pull]
-	rebase = false
+    rebase = false
