@@ -46,35 +46,36 @@ function python
 end
 
 # some   commandes for cd use
+function dev_cd
+  if [ "$argv[2]" = "" ]
+    cd "$argv[1]"
+  else
+    cd "$argv[1]/$argv[2]"
+  end
+end
 function devg
-  cd ~/dev/github/
+  dev_cd ~/dev/github "$argv"
 end
 function devgg
-  cd ~/dev/github/gbmor
+  dev_cd ~/dev/github/gbmor "$argv"
 end
 function devggf
-  cd ~/dev/github/gbmor-forks
+  dev_cd ~/dev/github/gbmor-forks "$argv"
 end
 function devgi
-  cd ~/dev/github/tildeinstitute
-end
-function devgl
-  cd ~/dev/gitlab
-end
-function devk
-  cd ~/dev/keybase
+  dev_cd ~/dev/github/tildeinstitute "$argv"
 end
 function devs
-  cd ~/dev/srht
+  dev_cd ~/dev/srht "$argv"
 end
 function devsg
-  cd ~/dev/srht/gbmor
+  dev_cd ~/dev/srht/gbmor/ "$argv"
 end
 function devt
-  cd ~/dev/tmp
+  dev_cd ~/dev/tmp "$argv"
 end
 function devtilde
-  cd ~/dev/tildegit
+  dev_cd ~/dev/tildegit "$argv"
 end
 
 # misc environment modifications
