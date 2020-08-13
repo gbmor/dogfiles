@@ -1,13 +1,20 @@
 source ~/.config/neomutt/dracula-theme/dracula.muttrc
-source ~/.config/neomutt/gpg.rc
-set crypt_use_gpgme	= yes
+
 set pgp_default_key	= "0x9cd12ff0"
+set pgp_use_gpg_agent	= yes
+set crypt_use_gpgme	= yes
+set crypt_verify_sig	= yes
+#set crypt_autosign=yes
+#set crypt_replysign=yes
+#set crypt_replyencrypt=yes
+#set crypt_replysignencrypted=yes
+#set crypt_autoencrypt = yes
 
 set from	= "Benjamin Morrison <ben@gbmor.dev>"
 set editor	= nvim
 set timeout	= 30
 set mail_check	= 5
-set signature	= "$HOME/.mutt/sig"
+set signature	= "$HOME/.neomutt/sig"
 
 set smtp_authenticators       = "login"
 set ssl_force_tls             = yes
