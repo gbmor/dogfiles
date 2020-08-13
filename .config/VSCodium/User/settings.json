@@ -68,5 +68,6 @@
   "todo-tree.tree.showScanModeButton": false,
   "rust-client.engine": "rust-analyzer",
   "rust-analyzer.updates.channel": "nightly",
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "python.pythonPath": "/usr/bin/python3"
 }
