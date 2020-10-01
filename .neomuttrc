@@ -1,4 +1,4 @@
-source ~/.config/neomutt/dracula-theme/dracula.muttrc
+source ~/.config/mutt-dracula/dracula.muttrc
 
 set pgp_default_key	= "0x9cd12ff0"
 set pgp_use_gpg_agent	= yes

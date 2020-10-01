@@ -1,5 +1,5 @@
 #!/bin/sh
-pkill gpg-agent
+pkill -9 gpg-agent
 
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)

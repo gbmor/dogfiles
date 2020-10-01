@@ -11,20 +11,20 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 
 ulimit -n 8096
 
+function ls
+  command /usr/bin/ls --color=auto $argv
+end
 function less
   command ~/.cargo/bin/bat -p $argv
 end
 function more
   command ~/.cargo/bin/bat -p $argv
 end
-function ls
-  command lsd $argv
-end
 function pip
   command /usr/bin/pip3 $argv
 end
 function dotfiles
-  command /usr/bin/git --git-dir /home/ahriman/.dotfiles/ --work-tree /home/ahriman $argv
+  command /usr/bin/git --git-dir $HOME/.dotfiles/ --work-tree $HOME $argv
 end
 function pkgs
   command /usr/bin/apt search --names-only $argv
@@ -81,7 +81,7 @@ end
 # misc environment modifications
 set -x VISUAL vim
 set -x EDITOR $VISUAL
-set -x PAGER "/home/ahriman/.cargo/bin/bat -p"
+set -x PAGER "$HOME/.cargo/bin/bat -p"
 set -x BROWSER firefox
 set -x TERM xterm-256color
 set -x MANPATH /usr/local/man $MANPATH
