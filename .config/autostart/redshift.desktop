@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/redshift -l 34:84 -t 5500:4000
+Exec=/bin/sh -c '/usr/bin/redshift -l 34:84 -t 5500:4400'
 Hidden=false
 X-GNOME-Autostart-enabled=true
 Name=redshift
