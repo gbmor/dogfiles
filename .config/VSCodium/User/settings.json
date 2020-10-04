@@ -1,7 +1,7 @@
 {
   "breadcrumbs.enabled": true,
   "clang-format.executable": "/usr/bin/clang-format",
-  "d.servedPath": "/home/ahriman/.local/share/code-d/bin/serve-d",
+  "d.servedPath": "$HOME/.local/share/code-d/bin/serve-d",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -13,12 +13,11 @@
   "files.enableTrash": false,
   "git.autoStash": true,
   "git.confirmSync": false,
-  "git.defaultCloneDirectory": "/home/ahriman/dev/github",
+  "git.defaultCloneDirectory": "$HOME/dev/github",
   "git.enableCommitSigning": true,
   "git.fetchOnPull": true,
   "gitlens.advanced.telemetry.enabled": false,
   "go.formatTool": "goimports",
-  "go.gopath": "/home/ahriman/dev/go",
   "go.testFlags": [
     "-v",
     "--bench",
