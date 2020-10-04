@@ -123,6 +123,9 @@ set -x BOOT_CLOJURE_NAME org.clojure/clojure
 set -x BOOT_VERSION 2.8.3
 set -x BOOT_CLOJURE_VERSION 1.8.0
 
+# ocaml
+source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
 # shadowgate mud over ssl
 function shadowgate
   command shadowgate socat TCP-LISTEN 8080,fork,reuseaddr OPENSSL shadowgate.org 8443

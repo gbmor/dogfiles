@@ -36,6 +36,7 @@ This function should only modify configuration layer settings."
      asciidoc
      c-c++
      d
+     (elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
      go
      html
      markdown

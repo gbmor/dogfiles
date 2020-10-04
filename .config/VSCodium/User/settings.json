@@ -51,7 +51,7 @@
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Dark-Dracula",
+  "workbench.colorTheme": "Dracula",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -69,5 +69,7 @@
   "rust-client.engine": "rust-analyzer",
   "rust-analyzer.updates.channel": "nightly",
   "python.formatting.provider": "black",
-  "python.pythonPath": "/usr/bin/python3"
+  "python.pythonPath": "/usr/bin/python3",
+  "shellcheck.executablePath": "/usr/bin/shellcheck",
+  "git.enableStatusBarSync": false
 }
