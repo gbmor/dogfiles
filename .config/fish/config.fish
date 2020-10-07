@@ -87,6 +87,7 @@ set -x TERM xterm-256color
 set -x MANPATH /usr/local/man $MANPATH
 set -x MANPATH /usr/share/man $MANPATH
 set -x PKG_CONFIG_PATH /usr/lib/x86_64-linux-gnu/pkgconfig /usr/local/lib/x86_64-linux-gnu/pkgconfig /usr/share/pkgconfig
+set -x DENO_INSTALL $HOME/.deno
 
 set -x GDK_BACKEND x11
 set -x RANGER_LOAD_DEFAULT_RC false
@@ -101,6 +102,7 @@ set -x PATH $HOME/bin $PATH
 set -x PATH $HOME/.ghcup/bin $PATH
 set -x PATH /snap/bin $PATH
 set -x PATH $HOME/.gem/ruby/2.7.0/bin $PATH
+set -x PATH $DENO_INSTALL/bin $PATH
 
 # hub, the github cli tool
 set -x HUB_CONFIG $HOME/.config/hub
