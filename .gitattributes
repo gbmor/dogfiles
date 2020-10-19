@@ -1,0 +1,15 @@
+*.cpp diff=cpp
+*.cs diff=csharp
+*.css diff=css
+*.ex diff=elixir
+*.exs diff=elixir
+*.go diff=golang
+*.htm diff=html
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+*.pl diff=perl
+*.rake diff=ruby
+*.rb diff=ruby
+*.rs diff=rust
+*.tex diff=tex

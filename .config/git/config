@@ -9,7 +9,7 @@
     email = ben@gbmor.dev
     signingkey = EAB272409CD12FF0
 [init]
-    templatedir = /home/ahriman/.config/git/template.git
+    templatedir = /home/deofol/.config/git/template.git
 [commit]
     gpgsign = true
 [hub]
@@ -20,3 +20,5 @@
     helper = cache --timeout 3600
 [pull]
     rebase = false
+[core]
+    attributesFile = /home/deofol/.gitattributes
