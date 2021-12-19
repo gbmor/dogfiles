@@ -130,7 +130,8 @@ set -x BOOT_CLOJURE_VERSION 1.8.0
 # ocaml
 source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
-# shadowgate mud over ssl
-function shadowgate
-  command shadowgate socat TCP-LISTEN 8080,fork,reuseaddr OPENSSL shadowgate.org 8443
+# when calling vim, don't load spacevim. for neovim, load it.
+function vim
+  command vim -u NONE $argv
 end
+

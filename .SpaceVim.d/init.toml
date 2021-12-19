@@ -53,8 +53,6 @@
 [[layers]]
     name = 'git'
 [[layers]]
-    name = 'github'
-[[layers]]
     name = 'gtags'
 [[layers]]
     name = 'lang#c'
@@ -65,26 +63,16 @@
 [[layers]]
     name = 'lang#go'
 [[layers]]
-    name = 'lang#haskell'
-[[layers]]
     name = 'lang#html'
-[[layers]]
-    name = 'lang#java'
 [[layers]]
     name = 'lang#javascript'
     auto_fix = true
-[[layers]]
-    name = 'lang#kotlin'
 [[layers]]
     name = 'lang#latex'
 [[layers]]
     name = 'lang#lisp'
 [[layers]]
-    name = 'lang#lua'
-[[layers]]
     name = 'lang#markdown'
-[[layers]]
-    name = 'lang#nim'
 [[layers]]
     name = 'lang#perl'
 [[layers]]
@@ -96,13 +84,6 @@
         ''
     ]
 [[layers]]
-    name = 'lang#racket'
-[[layers]]
-    name = 'lang#rust'
-    recommended-style = "enable"
-[[layers]]
-    name = 'lang#scala'
-[[layers]]
     name = 'lang#scheme'
 [[layers]]
     name = 'lang#sh'
@@ -111,11 +92,8 @@
 [[layers]]
     name = 'lsp'
     filetypes = [
-        'rust',
         'python'
     ]
-    [layers.override_cmd]
-        rust = ["rust-analyzer"]
 [[layers]]
     name = 'shell'
     default_position = 'top'
@@ -137,13 +115,4 @@
 
 [[custom_plugins]]
     name = "airblade/vim-gitgutter"
-    merged = true
-[[custom_plugins]]
-    name = "honza/vim-snippets"
-    merged = true
-[[custom_plugins]]
-    name = "neoclide/coc-rls"
-    marged = true
-[[custom_plugins]]
-    name = "ziglang/zig.vim"
     merged = true
