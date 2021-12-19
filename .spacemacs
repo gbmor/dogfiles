@@ -33,19 +33,19 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     asciidoc
-     c-c++
-     d
-     (elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
-     go
+     ;;asciidoc
+     ;;c-c++
+     ;;d
+     ;;(elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
+     ;;go
      html
      markdown
-     python
-     racket
-     rust
+     ;;python
+     ;;racket
+     ;;rust
      shell-scripts
      yaml
-     zig
+     ;;zig
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -63,6 +63,7 @@ This function should only modify configuration layer settings."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
+     perl5
      spell-checking
      syntax-checking
      version-control
@@ -507,7 +508,7 @@ before packages are loaded."
 
   (setq rust-format-on-save t)
 
-  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
+  ;;(spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
 
   )
 

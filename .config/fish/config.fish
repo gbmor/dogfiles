@@ -83,7 +83,7 @@ end
 # misc environment modifications
 set -x VISUAL vim
 set -x EDITOR $VISUAL
-set -x PAGER "$HOME/.cargo/bin/bat -p"
+#set -x PAGER "$HOME/.cargo/bin/bat -p"
 set -x BROWSER firefox
 set -x TERM xterm-256color
 set -x MANPATH /usr/local/man $MANPATH
@@ -111,7 +111,7 @@ set -x HUB_CONFIG $HOME/.config/hub
 set -x HUB_PROTOCOL ssh
 
 # rust env
-set -x RUST_SRC_PATH ~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
+#set -x RUST_SRC_PATH ~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library
 
 # go env
 set -x GOPATH $HOME/dev/go

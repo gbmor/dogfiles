@@ -3,7 +3,7 @@
   "clang-format.executable": "/usr/bin/clang-format",
   "d.servedPath": "$HOME/.local/share/code-d/bin/serve-d",
   "editor.acceptSuggestionOnEnter": "off",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
