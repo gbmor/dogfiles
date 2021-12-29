@@ -105,10 +105,16 @@ set -x PATH $HOME/.ghcup/bin $PATH
 set -x PATH /snap/bin $PATH
 set -x PATH $HOME/.gem/ruby/2.7.0/bin $PATH
 set -x PATH $DENO_INSTALL/bin $PATH
+set -x PATH $HOME/.pyenv/bin $PATH
+set -x PATH $HOME/.poetry/bin $PATH
 
 # hub, the github cli tool
 set -x HUB_CONFIG $HOME/.config/hub
 set -x HUB_PROTOCOL ssh
+
+# pyenv
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source
 
 # rust env
 #set -x RUST_SRC_PATH ~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library

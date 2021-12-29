@@ -1,12 +1,12 @@
 [sendemail]
     smtpEncryption = tls
     smtpServer = smtp.fastmail.com
-    smtpUser = ben@gbmor.dev
+    smtpUser = ben@gbmor.org
     smtpServerPort = 587
     annotate = yes
 [user]
     name = "Benjamin Morrison"
-    email = ben@gbmor.dev
+    email = ben@gbmor.org
     signingkey = EAB272409CD12FF0
 [init]
     templatedir = ~/.config/git/template.git

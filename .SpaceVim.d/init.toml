@@ -55,13 +55,9 @@
 [[layers]]
     name = 'gtags'
 [[layers]]
-    name = 'lang#c'
-[[layers]]
     name = 'lang#elixir'
 [[layers]]
     name = 'lang#extra'
-[[layers]]
-    name = 'lang#go'
 [[layers]]
     name = 'lang#html'
 [[layers]]
@@ -76,14 +72,6 @@
 [[layers]]
     name = 'lang#perl'
 [[layers]]
-    name = 'lang#python'
-    python_file_head = [
-        '#!/usr/bin/env python3',
-        '# -*- coding: utf-8 -*-',
-        '',
-        ''
-    ]
-[[layers]]
     name = 'lang#scheme'
 [[layers]]
     name = 'lang#sh'
@@ -92,8 +80,15 @@
 [[layers]]
     name = 'lsp'
     filetypes = [
-        'python'
+        'c',
+        'cpp',
+        'python',
+        'go',
+        'rust',
+        'zig'
     ]
+    [layers.override_cmd]
+      zig = ["zls"]
 [[layers]]
     name = 'shell'
     default_position = 'top'

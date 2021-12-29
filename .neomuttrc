@@ -10,7 +10,7 @@ set crypt_verify_sig	= yes
 #set crypt_replysignencrypted=yes
 #set crypt_autoencrypt = yes
 
-set from	= "Benjamin Morrison <ben@gbmor.dev>"
+set from	= "Benjamin Morrison <ben@gbmor.org>"
 set editor	= nvim
 set timeout	= 30
 set mail_check	= 5
@@ -18,10 +18,10 @@ set signature	= "$HOME/.neomutt/sig"
 
 set smtp_authenticators       = "login"
 set ssl_force_tls             = yes
-set smtp_url                  = "smtp://ben@gbmor.dev@smtp.fastmail.com:587"
-set smtp_pass	= "`pass Email/fastmail-mutt`"
+set smtp_url                  = "smtp://ben@gbmor.org@smtp.fastmail.com:587"
+set smtp_pass	= "`pass Email/fastmail-mutt-org`"
 
-set imap_user	= "ben@gbmor.dev"
+set imap_user	= "ben@gbmor.org"
 set imap_pass = $smtp_pass
 set folder	= imaps://imap.fastmail.com:993/
 set spoolfile	= +INBOX
