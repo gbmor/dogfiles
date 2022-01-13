@@ -12,7 +12,8 @@
     # if you want to use more colorscheme, please load the colorscheme
     # layer
     #colorscheme = "molokai"
-    colorscheme = "gruvbox"
+    #colorscheme = "gruvbox"
+    colorscheme = "jellybeans"
     colorscheme_bg = "dark"
     # file manager pane. Values: vimfiler (default), nerdtree, defx
     #filemanager = "nerdtree"
@@ -48,6 +49,8 @@
     name = 'debug'
 [[layers]]
     name = 'edit'
+[[layers]]
+    name = 'format'
 [[layers]]
     name = 'fzf'
 [[layers]]
