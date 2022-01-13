@@ -32,11 +32,11 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(elixir
      ;;asciidoc
      ;;c-c++
      ;;d
-     ;;(elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
+     (elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
      ;;go
      html
      markdown
