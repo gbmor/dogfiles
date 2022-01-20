@@ -32,42 +32,41 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(elixir
-     ;;asciidoc
-     ;;c-c++
-     ;;d
-     (elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
-     ;;go
-     html
-     markdown
-     ;;python
-     ;;racket
-     ;;rust
-     shell-scripts
-     yaml
-     ;;zig
+   '(
      ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     ;; better-defaults
+     (elixir :variables elixir-backend 'lsp elixir-ls-path "$HOME/.emacs.opt/elixir-ls")
      emacs-lisp
      git
+     ;;go
      helm
+     html
      lsp
-     multiple-cursors
+     markdown
+     ;; multiple-cursors
      neotree
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     perl5
+     ;;perl5
+     (python :variables
+             python-backend 'lsp
+             python-lsp-server 'pyright
+             python-format-on-save t
+             python-formatter 'black)
+     ;;racket
+     ;;rust
+     shell-scripts
      spell-checking
      syntax-checking
-     version-control
      themes-megapack
+     version-control
+     yaml
+     ;;zig
      )
 
    ;; List of additional packages that will be installed without being
@@ -209,8 +208,11 @@ It should only modify the values of Spacemacs settings."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(dracula
    			 gruvbox-dark-hard
-   			 spacemacs-dark
-                         spacemacs-light)
+         cyberpunk
+         jbeans
+         molokai
+         monokai
+         spacemacs-dark)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
@@ -505,7 +507,6 @@ before packages are loaded."
   (setq go-backend 'lsp)
 
   (setq lsp-rust-server 'rust-analyzer)
-
   (setq rust-format-on-save t)
 
   ;;(spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hook-racket-mode)
