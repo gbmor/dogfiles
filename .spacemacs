@@ -57,6 +57,7 @@ This function should only modify configuration layer settings."
              python-backend 'lsp
              python-lsp-server 'pyright
              python-test-runner '(pytest nose)
+             python-sort-imports-on-save t
              python-format-on-save t
              python-formatter 'black)
      ;;racket
