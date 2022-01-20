@@ -56,6 +56,7 @@ This function should only modify configuration layer settings."
      (python :variables
              python-backend 'lsp
              python-lsp-server 'pyright
+             python-test-runner '(pytest nose)
              python-format-on-save t
              python-formatter 'black)
      ;;racket
