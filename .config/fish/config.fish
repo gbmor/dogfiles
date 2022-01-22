@@ -55,6 +55,9 @@ function dev_cd
     cd "$argv[1]/$argv[2]"
   end
 end
+function devgb
+  dev_cd ~/dev/git.gbmor.org
+end
 function devg
   dev_cd ~/dev/github "$argv"
 end
