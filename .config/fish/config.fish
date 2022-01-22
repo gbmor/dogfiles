@@ -106,7 +106,7 @@ set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH $HOME/bin $PATH
 set -x PATH $HOME/.ghcup/bin $PATH
 set -x PATH /snap/bin $PATH
-set -x PATH $HOME/.gem/ruby/2.7.0/bin $PATH
+set -x PATH $HOME/.local/share/gem/ruby/2.7.0/bin $PATH
 set -x PATH $DENO_INSTALL/bin $PATH
 set -x PATH $HOME/.pyenv/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
@@ -143,4 +143,11 @@ source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 function vim
   command vim -u NONE $argv
 end
+
+set -x NIX_LINK $HOME/.nix-profile
+set -x NIX_PROFILES "/nix/var/nix/profiles/default $HOME/.nix-profile"
+set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
+set -x MANPATH $NIX_LINK/share/man $MANPATH
+set -x PATH $NIX_LINK/bin $PATH
+set -e NIX_LINK
 
