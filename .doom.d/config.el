@@ -73,5 +73,6 @@
       '("https://go.dev/blog/feed.atom"
         "https://threatpost.com/feed"
         "https://bleepingcomputer.com/feed"
+        "https://krebsonsecurity.com/feed"
         "https://feeds.twit.tv/sn.xml"
         "https://lwn.net/headlines/newrss"))
