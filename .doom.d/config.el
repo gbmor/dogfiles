@@ -76,3 +76,6 @@
         "https://krebsonsecurity.com/feed"
         "https://feeds.twit.tv/sn.xml"
         "https://lwn.net/headlines/newrss"))
+
+;; irc
+(load-file "~/.doom.d/local_irc.el")
