@@ -69,13 +69,14 @@
       scroll-margin 2)
 
 ;; rss feeds
-(setq elfeed-feeds
+(after! elfeed
+  (setq elfeed-feeds
       '("https://go.dev/blog/feed.atom"
         "https://threatpost.com/feed"
         "https://bleepingcomputer.com/feed"
         "https://krebsonsecurity.com/feed"
         "https://feeds.twit.tv/sn.xml"
-        "https://lwn.net/headlines/newrss"))
+        "https://lwn.net/headlines/newrss")))
 
 ;; irc
 (load-file "~/.doom.d/local_irc.el")
