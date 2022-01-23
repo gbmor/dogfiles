@@ -78,5 +78,5 @@
         "https://feeds.twit.tv/sn.xml"
         "https://lwn.net/headlines/newrss")))
 
-;; irc
-(load-file "~/.doom.d/local_irc.el")
+;; non-public config
+(load-file "~/.doom.d/local.el")
