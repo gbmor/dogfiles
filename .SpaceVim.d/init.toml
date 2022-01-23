@@ -92,6 +92,7 @@
     ]
     [layers.override_cmd]
       zig = ["zls"]
+      python = ["pyright"]
 [[layers]]
     name = 'shell'
     default_position = 'top'
