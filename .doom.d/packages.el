@@ -48,3 +48,8 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+;; weechat relay client
+;; https://github.com/bqv/weechat.el
+(package! weechat
+  :recipe (:host github :repo "bqv/weechat.el"))
