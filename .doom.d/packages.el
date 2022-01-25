@@ -53,3 +53,5 @@
 ;; https://github.com/bqv/weechat.el
 (package! weechat
   :recipe (:host github :repo "bqv/weechat.el"))
+
+(package! hackernews)

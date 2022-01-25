@@ -16,12 +16,6 @@ ulimit -n 8096
 function ls
   command /usr/bin/ls --color=auto $argv
 end
-function less
-  command ~/.cargo/bin/bat -p $argv
-end
-function more
-  command ~/.cargo/bin/bat -p $argv
-end
 function pip
   command /usr/bin/pip3 $argv
 end
@@ -30,9 +24,6 @@ function dotfiles
 end
 function pkgs
   command /usr/bin/apt search --names-only $argv
-end
-function cat
-  command bat $argv
 end
 
 # misc dev   commandes
@@ -116,8 +107,8 @@ set -x HUB_CONFIG $HOME/.config/hub
 set -x HUB_PROTOCOL ssh
 
 # pyenv
-status is-login; and pyenv init --path | source
-status is-interactive; and pyenv init - | source
+#status is-login; and pyenv init --path | source
+#status is-interactive; and pyenv init - | source
 
 # rust env
 #set -x RUST_SRC_PATH ~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library

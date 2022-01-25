@@ -15,6 +15,7 @@ exec_always "sh $HOME/.fehbg"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec "xcompmgr &"
 exec "xscreensaver &"
+exec "blueman-applet"
 exec "pactl upload-sample /usr/share/sounds/freedesktop/stereo/bell.oga x11-bell"
 exec "pactl load-module module-x11-bell sample=x11-bell display=$DISPLAY"
 exec "xset b 100"
@@ -53,7 +54,7 @@ floating_modifier $mod
 bindsym $mod+m bar mode toggle
 
 # start a terminal
-bindsym $mod+Shift+Return exec st
+bindsym $mod+Shift+Return exec xterm
 bindsym $mod+Return exec alacritty
 
 bindsym XF86AudioMute exec "amixer -D pulse sset Master toggle"
@@ -61,8 +62,8 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioMicMute exec "amixer -D pulse sset Mic toggle"
 #bindsym XF86Sleep exec dmenu_run
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
+bindsym XF86MonBrightnessDown exec "brightnessctl s 15-"
+bindsym XF86MonBrightnessUp exec "brightnessctl s +15"
 bindsym Print exec "scrot ~/screens/$(date +%Y-%m-%d-%H:%M:%S).png"
 
 #bindsym $mod+c exec "xterm -e cataclysm"
@@ -172,9 +173,9 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 
 #lock screen
 #bindsym $mod+Shift+Delete exec "i3lock -c 000000 -i img/freebsd-green.jpg"
-bindsym $mod+Shift+Delete exec "i3lock -c 000000 -i img/locked.png"
+bindsym $mod+Shift+Delete exec "xscreensaver-command -lock"
 #sleep
-bindsym $mod+Shift+End exec "sudo zzz"
+bindsym $mod+Shift+End exec "systemctl suspend"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

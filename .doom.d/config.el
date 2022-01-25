@@ -76,7 +76,9 @@
         "https://bleepingcomputer.com/feed"
         "https://krebsonsecurity.com/feed"
         "https://feeds.twit.tv/sn.xml"
-        "https://lwn.net/headlines/newrss")))
+        "https://lwn.net/headlines/newrss"
+        "https://lwn.net/headlines/Features"
+        "https://bits.debian.org/feeds/atom.xml")))
 
 ;; non-public config
 (load-file "~/.doom.d/local.el")

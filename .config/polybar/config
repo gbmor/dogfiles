@@ -19,7 +19,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Source Code Pro Semibold:size=10;1"
+font-0 = "Fira Code:size=10;1"
 font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-2 = "Font Awesome 5 Brands:size=10;1"
 
@@ -28,7 +28,7 @@ modules-center =
 modules-right = cpu memory rootfs cputemp batt1 batt0 wlan eth date
 
 tray-position = right
-tray-padding = 1
+tray-padding = 2
 ;wm-restack = i3
 ;override-redirect = true
 
