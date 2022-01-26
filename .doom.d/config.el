@@ -78,6 +78,7 @@
         "https://feeds.twit.tv/sn.xml"
         "https://lwn.net/headlines/newrss"
         "https://lwn.net/headlines/Features"
+        "http://crawl.develz.org/wordpress/feed"
         "https://bits.debian.org/feeds/atom.xml")))
 
 ;; non-public config
