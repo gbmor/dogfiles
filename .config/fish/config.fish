@@ -135,11 +135,13 @@ function vim
   command vim -u NONE $argv
 end
 
+# nix package manager configuration
 set -x NIX_LINK $HOME/.nix-profile
 set -x NIX_PROFILES "/nix/var/nix/profiles/default $HOME/.nix-profile"
 set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
 set -x MANPATH $NIX_LINK/share/man $MANPATH
 set -x PATH $NIX_LINK/bin $PATH
 set -x LOCALE_ARCHIVE $HOME/.nix-profile/lib/locale/locale-archive
+set -x NIXPKGS_ALLOW_UNFREE 1
 set -e NIX_LINK
 
