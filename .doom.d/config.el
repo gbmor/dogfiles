@@ -72,6 +72,7 @@
 (after! elfeed
   (setq elfeed-feeds
       '("https://go.dev/blog/feed.atom"
+        "https://cdn.jwz.org/blog/feed/"
         "https://threatpost.com/feed"
         "https://bleepingcomputer.com/feed"
         "https://krebsonsecurity.com/feed"
