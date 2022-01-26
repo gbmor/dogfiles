@@ -12,7 +12,8 @@
 # AUTOSTART SECTION
 # ###############################
 exec_always "sh $HOME/.fehbg"
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id "$HOME/.config/polybar/launch.sh --material"
 exec "xcompmgr &"
 exec "xscreensaver &"
 exec "blueman-applet"
