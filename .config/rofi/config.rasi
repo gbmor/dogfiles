@@ -1,4 +1,5 @@
 configuration {
+	font: "Fira Code 11";
 	terminal: "$HOME/.cargo/bin/alacritty";
 }
 @theme "/usr/share/rofi/themes/android_notification.rasi"
