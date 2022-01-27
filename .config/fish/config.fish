@@ -89,6 +89,7 @@ set -x GDK_BACKEND x11
 set -x RANGER_LOAD_DEFAULT_RC false
 
 # path modifications
+set -x PATH /var/lib/flatpak/exports/bin $PATH
 set -x PATH $HOME/.emacs.d/bin $PATH
 set -x PATH /snap/bin $PATH
 set -x PATH $HOME/dev/go/bin $PATH
