@@ -13,4 +13,4 @@ set -eu
 
 TOUCHPAD_ID="$(xinput | grep Touchpad | awk '{print $6}' | cut -d'=' -f2)"
 
-/usr/bin/xinput set-prop "$TOUCHPAD_ID" 318 1
+/usr/bin/xinput set-prop "$TOUCHPAD_ID" 320 1
