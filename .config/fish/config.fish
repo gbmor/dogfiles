@@ -78,7 +78,7 @@ end
 set -x VISUAL vim
 set -x EDITOR $VISUAL
 #set -x PAGER "$HOME/.cargo/bin/bat -p"
-set -x BROWSER firefox
+set -x BROWSER waterfox
 set -x TERM xterm-256color
 set -x MANPATH /usr/local/man $MANPATH
 set -x MANPATH /usr/share/man $MANPATH
