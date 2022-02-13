@@ -80,6 +80,8 @@
         "https://lwn.net/headlines/newrss"
         "https://lwn.net/headlines/Features"
         "http://crawl.develz.org/wordpress/feed"
+	"https://blog.rust-lang.org/feed.xml"
+	"https://blog.rust-lang.org/inside-rust/feed.xml"
         "https://bits.debian.org/feeds/atom.xml")))
 
 ;; non-public config
