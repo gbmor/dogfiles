@@ -1,18 +1,19 @@
 #!/bin/sh
 set -eu
 
-# This enables tapping, like tap-to-click, on the Thinkpad T14s Gen2 AMD.
+# This enables tapping, like tap-to-click, on laptops.
 # The touchpad ID changes between reboots sometimes.
+# So does the property ID for tapping.
 #
-# We need property 318, "Tapping Enabled".
+# We need the property "Tapping Enabled".
 # Available properties viewable with:
 #       xinput list-props $TOUCHPAD_ID
 #
 # Requires:
 #       xinput, libinput
 
-TOUCHPAD_ID="$(xinput | grep Touchpad | awk '{print $6}' | cut -d'=' -f2)"
-TAPPING_PROP_ID="$(xinput list-props 14 | grep 'Tapping Enabled (' | cut -d'(' -f2 | cut -d')' -f1)"
+TOUCHPAD_ID="$(xinput | awk '/Touchpad/ {split($6, a, "="); print a[2]}')"
+TAPPING_PROP_ID="$(xinput list-props "$TOUCHPAD_ID" | awk '/Tapping Enabled \(/ {split($4, a, "[()]"); print a[2]}')"
 
 printf 'Touchpad ID:\t%s\n' "$TOUCHPAD_ID"
 printf 'Tapping Prop:\t%s\n' "$TAPPING_PROP_ID"
