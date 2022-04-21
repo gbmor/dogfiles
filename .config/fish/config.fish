@@ -144,5 +144,6 @@ set -x MANPATH $NIX_LINK/share/man $MANPATH
 set -x PATH $NIX_LINK/bin $PATH
 set -x LOCALE_ARCHIVE $HOME/.nix-profile/lib/locale/locale-archive
 set -x NIXPKGS_ALLOW_UNFREE 1
+set -x NIX_PATH $NIX_PATH REPEAT=$HOME/.local/empty.nix
 set -e NIX_LINK
 
