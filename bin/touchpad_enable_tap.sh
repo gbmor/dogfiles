@@ -12,5 +12,11 @@ set -eu
 #       xinput, libinput
 
 TOUCHPAD_ID="$(xinput | grep Touchpad | awk '{print $6}' | cut -d'=' -f2)"
+TAPPING_PROP_ID="$(xinput list-props 14 | grep 'Tapping Enabled (' | cut -d'(' -f2 | cut -d')' -f1)"
 
-/usr/bin/xinput set-prop "$TOUCHPAD_ID" 320 1
+printf 'Touchpad ID:\t%s\n' "$TOUCHPAD_ID"
+printf 'Tapping Prop:\t%s\n' "$TAPPING_PROP_ID"
+
+/usr/bin/xinput set-prop "$TOUCHPAD_ID" "$TAPPING_PROP_ID" 1
+
+printf '\n...Tapping Enabled\n'
