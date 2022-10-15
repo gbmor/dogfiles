@@ -102,6 +102,7 @@ set -x PATH $HOME/.local/share/gem/ruby/2.7.0/bin $PATH
 set -x PATH $DENO_INSTALL/bin $PATH
 set -x PATH $HOME/.pyenv/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
+set -x PATH $HOME/.local/share/JetBrains/Toolbox/scripts $PATH
 
 # hub, the github cli tool
 set -x HUB_CONFIG $HOME/.config/hub
@@ -131,19 +132,13 @@ set -x BOOT_CLOJURE_VERSION 1.8.0
 # ocaml
 source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
+# gerbil/gambit
+set -x GAMBIT_HOME $HOME/local/gambit/current
+set -x PATH $GAMBIT_HOME/bin $PATH
+set -x LD_LIBRARY_PATH $GAMBIT_HOME/lib $LD_LIBRARY_PATH
+
 # when calling vim, don't load spacevim. for neovim, load it.
 function vim
   command vim -u NONE $argv
 end
-
-# nix package manager configuration
-set -x NIX_LINK $HOME/.nix-profile
-set -x NIX_PROFILES "/nix/var/nix/profiles/default $HOME/.nix-profile"
-set -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
-set -x MANPATH $NIX_LINK/share/man $MANPATH
-set -x PATH $NIX_LINK/bin $PATH
-set -x LOCALE_ARCHIVE $HOME/.nix-profile/lib/locale/locale-archive
-set -x NIXPKGS_ALLOW_UNFREE 1
-set -x NIX_PATH $NIX_PATH REPEAT=$HOME/.local/empty.nix
-set -e NIX_LINK
 
