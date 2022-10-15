@@ -7,7 +7,7 @@
 [user]
     name = "Benjamin Morrison"
     email = ben@gbmor.org
-    signingkey = EAB272409CD12FF0
+    signingkey = c486b92dc39b1312
 [init]
     templatedir = ~/.config/git/template.git
 [commit]

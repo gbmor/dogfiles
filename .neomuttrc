@@ -1,6 +1,6 @@
 source ~/.config/mutt-dracula/dracula.muttrc
 
-set pgp_default_key	= "0x9cd12ff0"
+set pgp_default_key	= "0xc39b1312"
 set pgp_use_gpg_agent	= yes
 set crypt_use_gpgme	= yes
 set crypt_verify_sig	= yes

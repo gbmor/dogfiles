@@ -1,9 +1,16 @@
 #!/bin/sh
+
+PARAM="$1"
+
 pkill -9 gpg-agent
 
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpg-connect-agent updatestartuptty /bye
 
+if [ "$PARAM" = "switch" ]; then
+  gpg-connect-agent "scd serialno" "learn --force" /bye
+fi
+
+gpg-connect-agent updatestartuptty /bye
 gpgconf --create-socketdir
 
