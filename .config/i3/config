@@ -55,8 +55,8 @@ floating_modifier $mod
 bindsym $mod+m bar mode toggle
 
 # start a terminal
-bindsym $mod+Shift+Return exec xterm
-bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Return exec urxvt
 
 bindsym XF86AudioMute exec "amixer -D pulse sset Master toggle"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
