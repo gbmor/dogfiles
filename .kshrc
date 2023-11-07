@@ -4,6 +4,12 @@ bind ^L=clear-screen
 set -o emacs
 export TERM=xterm-256color
 
+export GPG_TTY="$(tty)"
+#export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+#gpgconf --create-socketdir
+#gpgconf --launch gpg-agent
+#gpg-connect-agent updatestartuptty /bye >/dev/null
+
 [ -f "$HOME/.ksh_completions" ] && . "$HOME/.ksh_completions"
 
 _ps1_ret_code() {
@@ -12,14 +18,14 @@ _ps1_ret_code() {
 }
 
 _ps1_git_branch() {
-  git_status="$(git status 2>/dev/null | awk '/On branch/ {print $3}')"
+  git_status="$(git branch --show-current 2>/dev/null)"
   if [ "$git_status" != "" ]; then
     echo " ($git_status)" 
   fi
 }
 
 #shellcheck disable=SC2025
-export PS1='[92m\u[0m@\h [92m\w[00m`_ps1_git_branch``_ps1_ret_code`\$ '
+export PS1='\n[92m\u[0m@\h [92m\w[00m`_ps1_git_branch``_ps1_ret_code`\$ '
 
 dotfiles() {
   #shellcheck disable=SC2068

@@ -95,19 +95,19 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: JetBrains Mono
+    family: terminal-font
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Bold font face
   bold:
-    family: JetBrains Mono
+    family: terminal-font
     # The `style` can be specified to pick a specific face.
     style: Bold
 
   # Italic font face
   italic:
-    family: JetBrains Mono
+    family: terminal-font
     # The `style` can be specified to pick a specific face.
     style: Italic
 
